@@ -1,0 +1,1 @@
+Added log sentinel feature
