@@ -1,0 +1,5 @@
+2024-02-14 14:23:01 ERROR auth-service: Login failed for user@test.com
+2024-02-14 14:23:02 WARN  rate-limiter: Too many requests from 192.168.1.1
+2024-02-14 14:23:03 INFO  api-gateway: Request successful 200 OK
+2024-02-14 14:23:04 ERROR db-connector: Database connection timeout
+2024-02-14 14:23:05 DEBUG ml-detector: Pattern scan completed in 85ms

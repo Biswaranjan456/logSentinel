@@ -3,7 +3,8 @@
  * Used by both dashboard.js and logs.js
  */
 
-const BASE_URL = 'https://logsentinel-backend.onrender.com/api';
+const API_URL = 'http://localhost:5000/api';
+
 // ── Core fetch helper ──────────────────────────────────────────────────────
 async function apiFetch(endpoint, options = {}) {
   const url = `${API_URL}${endpoint}`;
