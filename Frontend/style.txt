@@ -1,0 +1,11 @@
+PS C:\Users\biswa\OneDrive\Desktop\Project 1 AIVI\Log-Processing-Anomaly-Detection-System> git status
+On branch log-detector
+Your branch is up to date with 'origin/log-detector'.
+
+nothing to commit, working tree clean
+PS C:\Users\biswa\OneDrive\Desktop\Project 1 AIVI\Log-Processing-Anomaly-Detection-System> git branch
+* log-detector
+  log-sentinel
+  main
+PS C:\Users\biswa\OneDrive\Desktop\Project 1 AIVI\Log-Processing-Anomaly-Detection-System> git status
+On branch log-detector
