@@ -6,7 +6,7 @@
 const BASE_URL = 'https://logsentinel-backend.onrender.com/api';
 // ── Core fetch helper ──────────────────────────────────────────────────────
 async function apiFetch(endpoint, options = {}) {
-  const url = `${API_URL}${endpoint}`;
+  const url = `${BASE_URL}${endpoint}`;
   const config = {
     headers: { 'Content-Type': 'application/json', ...options.headers },
     ...options,
