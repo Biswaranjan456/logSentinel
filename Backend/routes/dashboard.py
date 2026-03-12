@@ -6,7 +6,7 @@ router = APIRouter(prefix="/dashboard", tags=["Dashboard"])
 
 @router.get("/stats")
 async def get_stats():
-    db = await get_db()
+    db = get_db()
     total_logs = await db.logs.count_documents({})
     anomalies = await db.anomalies.count_documents({"status": "open"})
     critical = await db.anomalies.count_documents({"severity": "critical", "status": "open"})
@@ -25,7 +25,7 @@ async def get_stats():
 
 @router.get("/metrics")
 async def get_metrics():
-    db = await get_db()
+    db = get_db()
     total_logs = await db.logs.count_documents({})
     anomalies = await db.anomalies.count_documents({"status": "open"})
     critical = await db.anomalies.count_documents({"severity": "critical", "status": "open"})
