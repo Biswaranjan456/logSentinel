@@ -34,13 +34,13 @@ class Settings(BaseSettings):
     MAX_PAGE_SIZE: int = 500
 
     # ── CORS ──────────────────────────────────────────
-    ALLOWED_ORIGINS: list[str] = [
-        "http://localhost:3000",
-        "http://localhost:5500",
-        "http://127.0.0.1:5500",
-        "https://logsentinel.onrender.com",
-        "https://logsentinel-frontend.onrender.com",
-    ]
+    ALLOWED_ORIGINS: list[str] = ["*"]
+    #     "http://localhost:3000",
+    #     "http://localhost:5500",
+    #     "http://127.0.0.1:5500",
+    #     "https://logsentinel.onrender.com",
+    #     "https://logsentinel-frontend.onrender.com",
+    # ]
 
     class Config:
         env_file = ".env"
