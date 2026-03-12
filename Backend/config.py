@@ -38,7 +38,7 @@ class Settings(BaseSettings):
         "http://localhost:3000",
         "http://localhost:5500",
         "http://127.0.0.1:5500",
-        "https://logsentinel-frontend.onrender.com",
+        "https://logsentinel.onrender.com",
     ]
 
     class Config:
