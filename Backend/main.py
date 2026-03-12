@@ -12,6 +12,7 @@ from fastapi.responses import JSONResponse
 
 from config import settings
 from database import connect_db, close_db
+from routes.dashboard import router as dashboard_router
 from routes.logs import router as logs_router
 from routes.anomalies import router as anomalies_router
 
@@ -70,7 +71,7 @@ API_PREFIX = "/api"
 
 app.include_router(logs_router,      prefix=API_PREFIX)
 app.include_router(anomalies_router, prefix=API_PREFIX)
-
+app.include_router(dashboard_router, prefix=API_PREFIX)
 
 # ── Health check ───────────────────────────────────────────────────────────
 @app.get("/health", tags=["Health"])
