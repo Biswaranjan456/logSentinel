@@ -2,8 +2,7 @@
  * js/api.js — Shared API call functions
  * Used by both dashboard.js and logs.js
  */
-
-const BASE_URL = 'https://logsentinel-backend.onrender.com/api';
+const BASE_URL = 'https://logsentinel-backend-zesq.onrender.com/api';
 // ── Core fetch helper ──────────────────────────────────────────────────────
 async function apiFetch(endpoint, options = {}) {
   const url = `${BASE_URL}${endpoint}`;
