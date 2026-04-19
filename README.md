@@ -26,3 +26,38 @@ Frontend:  https://logsentinel.onrender.com
 Backend:   https://logsentinel-backend-zesq.onrender.com
 
 Swagger:   https://logsentinel-backend-zesq.onrender.com/docs
+=======
+Frontend: https://logsentinel.onrender.com  
+Backend: https://logsentinel-backend-zesq.onrender.com  
+API Docs: https://logsentinel-backend-zesq.onrender.com/docs  
+
+---
+
+## How It Works
+
+1. Upload logs or send them through API  
+2. Logs are parsed and stored in database  
+3. System checks for unusual patterns  
+4. Dashboard shows results and alerts  
+5. User can review and resolve issues  
+
+---
+
+## Future Improvements
+
+- Add login system  
+- Real-time alerts  
+- Improve UI  
+- Add more advanced features  
+
+---
+
+## Author
+Biswaranjan Patra  
+MCA Student | Software Development Intern  
+
+---
+
+## Support
+If you like this project, give it a star on GitHub.
+>>>>>>> 801e2881a385a4bb2e7d10074247cba4b87b2107
