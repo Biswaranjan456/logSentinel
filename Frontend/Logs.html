@@ -345,7 +345,6 @@ function switchTab(name) {
     const src = document.getElementById('log-count');
     if (el && src) el.textContent = src.textContent;
   }
-  if (name === 'anomalies') renderSeverityCounts();
 }
 
 // Clock on logs page
@@ -356,11 +355,6 @@ document.addEventListener('DOMContentLoaded', () => {
     tick(); setInterval(tick, 1000);
   }
 });
-
-function runAnomalyScan() {
-  toast('Scan Running', 'ML anomaly detection scan in progress…', '🔍');
-  setTimeout(() => toast('Scan Complete', `${MOCK.anomalies.length} anomalies found`, '✅'), 2800);
-}
 </script>
 </body>
 </html>

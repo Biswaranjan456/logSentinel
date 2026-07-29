@@ -5,10 +5,12 @@ LogSentinel — Log Processing & Anomaly Detection API
 
 import logging
 from contextlib import asynccontextmanager
+import os
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 from config import settings
 from database import connect_db, close_db
@@ -83,14 +85,9 @@ async def health():
     }
 
 
-# ── Root ───────────────────────────────────────────────────────────────────
-@app.get("/", tags=["Root"])
-async def root():
-    return {
-        "message": f"Welcome to {settings.APP_NAME} API",
-        "docs"   : "/docs",
-        "health" : "/health",
-    }
+# ── Static files (Frontend) — MUST BE LAST ─────────────────────────────────
+frontend_path = os.path.join(os.path.dirname(__file__), "..", "Frontend")
+app.mount("/", StaticFiles(directory=frontend_path, html=True), name="static")
 
 
 # ── Run directly ───────────────────────────────────────────────────────────
